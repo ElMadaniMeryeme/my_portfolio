@@ -67,11 +67,12 @@ li {
     box-shadow: var(--shadow)
 }
 
-.header:last-child:hover, #dialog button {
+.header:last-child, #dialog button {
     cursor: pointer;
 }
 
-#dialog, #dialog button, #dialog a {
+
+#dialog, #dialog form button,  #dialog form, #dialog a {
     background-color: transparent;
     border: none;
     outline: none;
@@ -85,10 +86,11 @@ li {
     box-shadow: var(--shadow);
     border-radius: 5px;
     backdrop-filter: blur(10px);
+    text-align: center;
 }
 
 
-#dialog button {
+#close{
     position:fixed;
     top: 5%;
     right: 5%;
@@ -97,7 +99,7 @@ li {
 }
 
 
-#dialog a {
+#dialog form button:not(#close), #dialog a {
     color: #161A34;
     display: block;
     width: 100px;

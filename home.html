@@ -21,13 +21,26 @@
                 <div class = "drawer" onclick="window.dialog.showModal();">
                     <dialog id="dialog" >
                         <form method="dialog" >
-                            <button>X</button>
+                            <button id="close">X</button>
                         </form>
 
-                        <a href="home.html">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#portfolio">Portfolio</a>
-                        <a href="#links">Contact</a>
+                        <a href="home.html" >Home</a>
+
+                        <form method="dialog" >
+                            <button onclick="window.location.href = 'home.html#about';">
+                                About</button>
+                        </form>
+
+                        <form method="dialog" >
+                            <button onclick="window.location.href = 'home.html#portfolio';">
+                                Portfolio</button>
+                        </form>
+
+                        <form method="dialog" >
+                            <button id= "co" onclick="window.location.href = 'home.html#links';">
+                                Contact</button>
+                        </form>
+
 
                     </dialog>
                         <div></div>
